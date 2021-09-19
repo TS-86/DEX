@@ -45,7 +45,7 @@ export const Swap5: React.FC<Props> = ({tokenA, tokenB}) => {
     const [amount, setAmount] = useState<number>(20);
 
     const handleAmountChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setAmount(parseInt(event.target.value));
+        setAmount(parseFloat(event.target.value));
     };
 
 
